@@ -1,0 +1,14 @@
+
+Consultas programación:
+
+TP1
+Ejercicio 7
+
+TP2
+Ejercicio 2: uso del según 
+Alguna alternativa al según
+
+TP3
+Ejercicio 2: bucle for 
+Como hacer para que muestre la cantidad de repeticiones que quiero
+ejercicios 7 y 8
