@@ -3,11 +3,12 @@
 
 entero = int(input('Ingrese un número entero: '))
 #lista = ['*']
-lista = '*'
+lista = ' *'
+print(lista)
 for i in range(1 , entero + 1):
 #    print(f'{" *"*i}')
 #    print(lista)
-    lista = lista + '*'
+    lista = lista + ' *'
     print(lista)
 #    lista.append('*')
   

@@ -4,4 +4,4 @@ for i in range(1,11):
     print('Tabla del ' , i)
     for b in range(1 , 11):
         multiplicacion = b * i
-        print(multiplicacion)
+        print(i , '*' , b , '=' , multiplicacion)
