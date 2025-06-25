@@ -24,7 +24,7 @@ print(cadena[:5])  # Imprime desde el inicio hasta el quinto carácter
 print(cadena[-5:])  # Imprime los últimos 5 caracteres de la cadena
 print(cadena[0:5:2])  # Imprime los caracteres de la cadena desde el inicio hasta el quinto, saltando de 2 en 2
 print(cadena[::-1])  # Imprime la cadena al revés
-print(cadena[-1:0:-1])
+print(cadena[-1:0:-1]) # Invierte la cadena 
 
 # contar cuantas letras 'a' hay en la cadena
 cantidad_a = 0
