@@ -5,7 +5,7 @@ cadena = ''
 for i in range(1 , 21):
     lista.append(i)
 print(lista)
-for j in range(1 , 21):
-    print(lista.index(j % 2 == 0))
-
+for i in lista:
+    if i % 2 == 0:
+        print(i)
     
