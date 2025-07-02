@@ -2,28 +2,17 @@
 # elementos repetidos.
 #entrada = str(input('Ingrese una palabra: '))
 #print(entrada)
-lista = []
-lista2 = []
-lista3 = []
-lista4 = []
-palabra = 'a'
-while palabra != '':
-    entrada = str(input('Ingrese una palabra para añadir a una lista: '))
-    palabra = entrada
-    if palabra != '':
-        lista.append(entrada)
-        lista2.append(entrada)
-        lista3.append(entrada)
-        print(lista)
-#print(lista)
-#print(lista2)
-#print(lista3)
-maximo = len(lista)
-for i in range(1 , maximo):
-    if lista[i] == lista2[i]:
-        lista4.append(lista.index(lista[i]))
-print(lista)
-print(lista2)
-print(lista3)
-print(lista4)
+palabras = []
+palabras_sin_repetir = []
+while True:
+    palabra_nueva = input('Ingresá un palabra (vacía sin terminar): ')
+    if palabra_nueva == '':
+        break
+
+    palabras.append(palabra_nueva)
+for palabra in palabras:
+    if palabra not in palabras_sin_repetir:
+        palabras_sin_repetir.append(palabra)
+print(palabras_sin_repetir)
+
 

@@ -2,4 +2,5 @@
 #por pantalla el menor y el mayor de los precios (sin hardcodear las posiciones).
 lista = [50 , 75 , 46 , 22 , 80 , 65 , 8]
 lista.sort()
-print(lista)
+print(lista[0])
+print(lista[-1])
