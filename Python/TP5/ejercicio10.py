@@ -55,11 +55,16 @@ while True:
         del clientes[input('Ingrese el DNI del cliente que desea eliminar: ')]
     #Mostrar cliente
     elif condicion == 3:
+        cliente = int(input('Ingrese el DNI del cliente: '))
+        
     #Listar clientes
+        print('Lista de clientes')
+        print('-----------------')
     elif condicion == 4:
     #Listar clientes preferentes
     elif condicion == 5:
         print('')
+    
     print('1. Añadir cliente')
     print('2. Eliminar cliente')
     print('3. Mostrar cliente')
