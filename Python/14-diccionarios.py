@@ -8,7 +8,7 @@ dl = dict(Nombre='Daniel', Apellido='Dantur', Edad=40) #otra forma de declarar u
 # se puede cambiar el valor de una key luego de haberla declarado
 # key1=value , key2=value
 
-dl = dict([('Nombre','Danie'),('Apellido','Dantur'),('Edad',40)]) #otra forma de declarar un diccionario 
+dl = dict([('Nombre','Daniel'),('Apellido','Dantur'),('Edad',40)]) #otra forma de declarar un diccionario 
 #[(key1 , value) , (key2 , value)]
 # Algunas propiedades 
 # son dinamicos

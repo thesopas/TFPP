@@ -2,6 +2,7 @@
 # el artículo y su precio y añadir el par al diccionario, hasta que el usuario decida terminar. Después se
 # debe mostrar por pantalla la lista de artículos y el precio total, con un formato como el siguiente:
 productos = {}
+suma = 0
 condicion = ''
 condicion = condicion.upper()
 articulo = input('Ingrese un producto: ')
@@ -9,7 +10,7 @@ precio = int(input('Ingrese su precio: '))
 productos[articulo] = precio
 
 while True:
-    condicion = input('Desea ingresar más productos: ')
+    condicion = input('¿Desea ingresar más productos?: ')
     condicion = condicion.upper()
     if condicion == 'NO':
         break
@@ -18,9 +19,16 @@ while True:
     productos[articulo] = precio
 
 print('Lista de compras')
-print('---------------')
-for i in range(len(productos)):
-    print()
+print('----------------')
+for i in productos:
+    print(f"{i : <10} {'$' : >10} {productos[i] : >10}")
+    suma = suma + productos[i]
+print('...')
+print(f"{'Total' : <10} {'$' : >10} {suma : >10}")
+
+
+
+
 
 #se puede iterar sobre los keys y lo values 
 
