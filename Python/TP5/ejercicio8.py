@@ -8,9 +8,18 @@
 # hola: hello
 # adiós: goodbye
 # gracias: thanks
+
 traducciones_d = {}
+
 traducciones_s = input('Entrada: ')
-print(traducciones_s)
+traducciones_l = traducciones_s.split(',')
+traducciones_t = tuple(traducciones_l)
 
-
+for i in range(len(traducciones_t)):
+    lista = traducciones_t[i].split(':')
+    traducciones_d[lista[0]] = lista[1]
     
+print('Diccionario Español-Inglés')
+print('--------------------------')
+for j in traducciones_d:
+    print(j , ': ' , traducciones_d[j])
