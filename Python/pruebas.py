@@ -21,6 +21,10 @@ clientes = {
         'Preferente' : False
     }
 }
-#print(clientes[12345678])
-nombre = clientes['12345678'['Nombre']]
-print('nombre')
+
+entrada = input('')
+for dni, datos in clientes.items():
+    if dni == entrada:
+        print('DNI: ' , entrada)
+        for dato, valor in datos.items():
+            print(f"{dato} {': '} {valor}")
