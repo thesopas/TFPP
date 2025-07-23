@@ -52,6 +52,7 @@ while True:
         elif preferencia == 'NO':
             diccionario_temporal['Preferente'] = False
         clientes[dni] = diccionario_temporal
+        print('Cliente añadido')
     #Eliminar cliente
     elif condicion == 2:
         del clientes[int(input('Ingrese el DNI del cliente que desea eliminar: '))]
@@ -81,7 +82,8 @@ while True:
                   for dato2, valor2 in datos.items():
                         print(f"{dato2} {': '} {valor2}")
     else:
-        condicion = int(input('Opción incorrecta, intente de nuevo: '))
+        print('---------------')
+        print('--> Opción incorrecta, intente de nuevo  <-- ')
 
     print('---------------')
     print('1. Añadir cliente')
