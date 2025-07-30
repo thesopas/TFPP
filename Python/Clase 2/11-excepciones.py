@@ -1,3 +1,4 @@
+
 def leer_entero(mensaje='Ingrese un número: '):
     while True:
         try:

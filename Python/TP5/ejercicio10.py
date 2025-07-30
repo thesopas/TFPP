@@ -34,28 +34,38 @@ while True:
 
     #Terminar
     if condicion == 6:
+        print('---------------')
         print('Saliendo...')
+        print('---------------')
         break
     #Añadir cliente
     elif condicion == 1:
         diccionario_temporal = {}
         diccionario_temporal.clear()
         dni = int(input('Ingrese el DNI del cliente: '))
-        diccionario_temporal['Nombre'] = input('Ingrese el nombre completo del cliente: ')
-        diccionario_temporal['Direccion'] = input('Ingrese la direccón del cliente: ')
-        diccionario_temporal['Telefono'] = input('Ingrese el número de télefono del cliente: ')
-        diccionario_temporal['Mail'] = input('Ingrese el mail del cliente: ')
-        preferencia = input('¿El cliente es preferente?: ')
-        preferencia = preferencia.upper()
-        if preferencia == 'SI':
-            diccionario_temporal['Preferente'] = True
-        elif preferencia == 'NO':
-            diccionario_temporal['Preferente'] = False
-        clientes[dni] = diccionario_temporal
-        print('Cliente añadido')
+        if dni in clientes:
+            print('El cliente ya se encuentra en la lista')
+        else:
+            diccionario_temporal['Nombre'] = input('Ingrese el nombre completo del cliente: ')
+            diccionario_temporal['Direccion'] = input('Ingrese la direccón del cliente: ')
+            diccionario_temporal['Telefono'] = input('Ingrese el número de télefono del cliente: ')
+            diccionario_temporal['Mail'] = input('Ingrese el mail del cliente: ')
+            preferencia = input('¿El cliente es preferente?: ')
+            preferencia = preferencia.upper()
+            if preferencia == 'SI':
+                diccionario_temporal['Preferente'] = True
+            elif preferencia == 'NO':
+                diccionario_temporal['Preferente'] = False
+            clientes[dni] = diccionario_temporal
+            print('Cliente añadido')
     #Eliminar cliente
     elif condicion == 2:
-        del clientes[int(input('Ingrese el DNI del cliente que desea eliminar: '))]
+        dni = int(input('Ingrese el DNI del cliente que desea eliminar: '))
+        if dni is not clientes:
+            print('--> El cliente no se encuentra en la lista <--')
+        else:
+            del clientes[dni]
+            print('Cliente eliminado')
     #Mostrar cliente
     elif condicion == 3:
         entrada = int(input('Ingrese el DNI del cliente que desea mostrar: '))
@@ -67,16 +77,21 @@ while True:
                     print(f"{dato} {': '} {valor}")
     #Listar clientes
     elif condicion == 4:
+        print('---------------')
+        print('Lista de clientes')
         for dni, datos in clientes.items():
             print('---------------')
             print('DNI: ' , dni)
             for dato, valor in datos.items():
-                print(f"{dato} {': '} {valor}")
+                if dato != 'Preferente':
+                    print(f"{dato} {': '} {valor}")
     #Listar clientes preferentes
     elif condicion == 5:
         for dni, datos in clientes.items():
             for dato, valor in datos.items():
                 if valor == True:
+                  print('---------------')
+                  print('Lista de clientes preferentes')
                   print('---------------')
                   print('DNI:' , dni)
                   for dato2, valor2 in datos.items():

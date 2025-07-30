@@ -1,0 +1,19 @@
+Características de un algoritmo 
+Resolución de un problema (desde el punto de vista de un algorimto)
+Progamación estructurada (Importante)
+Estructuras de programación: secuencial, condicional e iterativa 
+Diagrama de flujo 
+Rectagulo con doble línea vertical a los costados: subproceso 
+Variables: ponerle nombre a un espacio de memmoria donde se almacena un dato 
+Nomeclaturas: camelcase, pascalcase, etc...
+Diferencias entre variables y constante: una vez asignado el valor a una constante este no cambie, en python esto no está definido. Por convención 
+las variables declaradas con mayusculas se consideran constantes. También se puede usar una tupla. 
+Tipos de datos: entero, float, char (no existe en python), booleano.
+Operdaores ariméticos 
+Operadores lógicos 
+Teoría de funciones 
+Función: ponerle nombre a un algortimo, para poder usarlo en nuestro código
+Variables locales y variables globales 
+Paso de parametros por valor: crea un valor nuevo en memmoria
+ y por referencia: accede a la direeción de memoria 
+ 

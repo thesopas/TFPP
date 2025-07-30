@@ -1,30 +1,3 @@
-clientes = {
-    '12345678' : {
-        'Nombre' : 'Juan Pérez',
-        'Dirección' : 'Av. Siempre Viva 742',
-        'Télefono' : '1112345678',
-        'Correo' : 'juan.perez@email.com',
-        'Preferente' : True
-    },
-    '23456789': {
-        'Nombre' : 'María Gómez',
-        'Dirección' : 'Calle Falsa 123',
-        'Télefono' : '1123456789',
-        'Correo' : 'maria.gomez@email.com',
-        'Preferente' : False
-    },
-    '34567890': {
-        'Nombre' : 'Carlos López',
-        'Dirección' : 'Ruta 9 Km 42',
-        'Télefono' : '1134567890',
-        'Correo' : 'carlos.lopez@email.com',
-        'Preferente' : False
-    }
-}
-
-entrada = input('')
-for dni, datos in clientes.items():
-    if dni == entrada:
-        print('DNI: ' , entrada)
-        for dato, valor in datos.items():
-            print(f"{dato} {': '} {valor}")
+conjunto = {10,3,5,7,7,5}
+for elemento in conjunto:
+    print(elemento)
