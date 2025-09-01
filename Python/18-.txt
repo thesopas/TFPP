@@ -1,0 +1,13 @@
+clase: es el molde a partir del cual se crean los objetos. 
+Las clases tienen sus atributos y su métodos 
+paradigmas de programación
+prog orientada a obj: no como una secuencia de instrucciones sino 
+como un conjunto de objetos que interactúan entre sí.
+Abstracción: mostrar lo que sea util para el usuario y ocultar lo que no sirva 
+Encapsulamiento: es la ocultación de comportamientos internos de un programa 
+Tipos de acceso: público, privado y protegido 
+Super llama al padre 
+
+Análisis de estado:
+Diagrama de estados 
+
